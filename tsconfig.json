@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "target": "es2022",
+    "module": "CommonJS",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
-    "module": "CommonJS",
     "rootDir": "src",
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "useUnknownInCatchVariables": false
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
 }

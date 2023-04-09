@@ -1,22 +1,21 @@
 root: true
-parser: "@typescript-eslint/parser"
+parser: '@typescript-eslint/parser'
 plugins:
-  - "@typescript-eslint"
+  - '@typescript-eslint'
 env:
-  browser: true
-  es2021: true
+  node: true
+  es2022: true
 parserOptions:
-  ecmaVesion: "latest"
-  sourceType: "module"
-  project: "./tsconfig.eslint.json"
+  sourceType: 'module'
+  project: './tsconfig.eslint.json'
 ignorePatterns:
-  - "dist"
+  - 'dist'
 extends:
-  - "airbnb-base"
-  - "airbnb-typescript/base"
-  - "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  - 'airbnb-base'
+  - 'airbnb-typescript/base'
+  - 'plugin:@typescript-eslint/recommended-requiring-type-checking'
 rules:
-  "import/prefer-default-export": "off"
-  "@typescript-eslint/quotes": 
-    - "error"
-    - "single"
+  'import/prefer-default-export': 'off'
+  '@typescript-eslint/quotes':
+    - 'error'
+    - 'single'
